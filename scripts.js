@@ -7,8 +7,12 @@ add.addEventListener('click', function() {
 	
 	var element = document.createElement('li');
 	element.innerHTML = 'item';
-	list.getElementsByTagName('li');
+	var dlugosc = document.getElementsByTagName('li').length;
+	console.log(dlugosc);
+	list.getElementsByTagName("li");
+	element.innerHTML = 'item ' + dlugosc;
 	list.appendChild(element);
+	
 });
 
 
